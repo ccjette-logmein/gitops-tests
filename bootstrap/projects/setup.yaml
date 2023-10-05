@@ -13,3 +13,5 @@ spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
+  sourceRepos: 
+    - "ßhttps://github.com/ccjette-logmein/gitops-tests"
