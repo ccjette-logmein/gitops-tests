@@ -26,6 +26,14 @@ spec:
               values: [prod]
         values:
           revision: main
+  strategy: 
+    type: 'RollingSync'
+    rollingSync: 
+      steps: 
+        - matchExpressions:
+            - {key: environment, operator: In, values: ['dev']}
+        - matchExpressions:
+            - {key: environment, operator: NotIn, values: ['dev']}
   template:
     metadata:
       name: 'tests.simple-application.{{name}}'

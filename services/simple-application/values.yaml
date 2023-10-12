@@ -1,3 +1,4 @@
 app:
   service:
     type: ClusterIP
+  kubeVersion: '1.26'
