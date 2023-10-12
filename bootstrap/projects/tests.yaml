@@ -23,3 +23,9 @@ spec:
     - kind: deny
       schedule: '0 12 * * *'
       duration: 6h
+      applications: 
+        - '*'
+      namespaces: 
+        - '*'
+      clusters: 
+        - '*'
