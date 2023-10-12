@@ -19,3 +19,7 @@ spec:
       name: 'production-2'
   sourceRepos: 
     - "https://github.com/ccjette-logmein/gitops-tests"
+  syncWindows: 
+    - kind: deny
+      schedule: '0 0 12 * *'
+      duration: 6h
