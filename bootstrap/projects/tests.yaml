@@ -21,7 +21,7 @@ spec:
     - "https://github.com/ccjette-logmein/gitops-tests"
   syncWindows: 
     - kind: deny
-      schedule: '0 12 * * *'
+      schedule: '0 8 * * *'
       duration: 6h
       applications: 
         - '*'
