@@ -4,3 +4,5 @@ app:
   extraEnvVars: 
     - name: FOO
       value: BAR
+    - name: GORILLA
+      value: HARAMBE
