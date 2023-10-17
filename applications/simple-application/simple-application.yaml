@@ -31,9 +31,9 @@ spec:
     rollingSync: 
       steps: 
         - matchExpressions:
-            - {key: environment, operator: In, values: ['dev']}
+            - {key: environment, operator: NotIn, values: ['prod']}
         - matchExpressions:
-            - {key: environment, operator: NotIn, values: ['dev']}
+            - {key: environment, operator: In, values: ['prod']}
   template:
     metadata:
       name: 'tests.simple-application.{{name}}'
