@@ -19,14 +19,14 @@ spec:
       name: 'production-2'
   sourceRepos: 
     - "https://github.com/ccjette-logmein/gitops-tests"
-  syncWindows: 
-    - kind: deny
-      schedule: '0 9 * * *'
-      duration: 8h
-      applications: 
-        - '*'
-      namespaces: 
-        - '*'
-      clusters: 
-        - '*'
-      timeZone: 'America/New_York' 
+  # syncWindows: 
+  #   - kind: deny
+  #     schedule: '0 9 * * *'
+  #     duration: 8h
+  #     applications: 
+  #       - '*'
+  #     namespaces: 
+  #       - '*'
+  #     clusters: 
+  #       - '*'
+  #     timeZone: 'America/New_York' 
