@@ -39,12 +39,12 @@ spec:
       name: 'tests.simple-application.{{name}}'
       annotations:
         argocd.argoproj.io/manifest-generate-paths: .;../values.yaml;
+      labels:
+        environment: '{{metadata.labels.environment}}'
     spec:
       destination:
         namespace: '{{metadata.labels.fake-ns}}'
         name: '{{name}}'
-        labels:
-          environment: '{{metadata.labels.environment}}'
       project: tests
       source:
         path: services/simple-application/{{metadata.labels.environment}}
