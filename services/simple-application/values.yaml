@@ -4,5 +4,3 @@ app:
   extraEnvVars: 
     - name: FOO
       value: BAR
-    - name: BAZ
-      value: BAR
