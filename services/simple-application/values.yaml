@@ -1,4 +1,6 @@
 app:
   service:
     type: ClusterIP
-  kubeVersion: '1.26'
+  extraEnvVars: 
+    - name: FOO
+      value: BAR
