@@ -31,7 +31,9 @@ spec:
     rollingSync: 
       steps: 
         - matchExpressions:
-            - {key: environment, operator: NotIn, values: ['prod']}
+            - {key: environment, operator: In, values: ['dev']}   
+        - matchExpressions:
+            - {key: environment, operator: In, values: ['stage']}
         - matchExpressions:
             - {key: environment, operator: In, values: ['prod']}
   template:
