@@ -33,7 +33,7 @@ spec:
         - matchExpressions:
             - {key: environment, operator: In, values: ['dev']}   
         - matchExpressions:
-            - {key: environment, operator: In, values: ['stage']}
+            - {key: environment, operator: In, values: ['staging']}
         - matchExpressions:
             - {key: environment, operator: In, values: ['prod']}
   template:
