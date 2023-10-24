@@ -9,7 +9,7 @@ spec:
   description: Project for the test services
   # In this scenario, everything runs in the local cluster. Simulate different cluster by having different namespaces
   destinations:
-    - namespace: 'dev'
+    - namespace: 'test'
       name: 'dev'
     - namespace: 'staging'
       name: 'staging'
