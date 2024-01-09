@@ -22,7 +22,7 @@ spec:
   syncWindows: 
     - kind: deny
       schedule: '0 6 * * *'
-      duration: 14h
+      duration: 4h
       applications: 
         - '*'
       namespaces: 
